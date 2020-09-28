@@ -49,6 +49,7 @@ const SearchResult = props => {
                                         </button>
                                         </a>
                                     </Row>
+                                    <br></br>
                                 </li>
                             );
                         })}

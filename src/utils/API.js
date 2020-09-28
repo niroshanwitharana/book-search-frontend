@@ -8,22 +8,22 @@ export default {
 
     // Gets all books
     getBooks: function () {
-        return axios.get("https://niro-book-search-backend.herokuapp.com/api/books");
+        return axios.get("http://localhost:3001/api/books");
     },
 
     // Gets the book with the given id
     getBook: function (id) {
-        return axios.get("https://niro-book-search-backend.herokuapp.com/api/books/" + id);
+        return axios.get("http://localhost:3001/api/books/" + id);
     },
 
     // Saves a book to the database
     saveBook: function (savedBooks) {
-        return axios.post("https://niro-book-search-backend.herokuapp.com/api/books", savedBooks);
+        return axios.post("http://localhost:3001/api/books", savedBooks);
     },
 
     // Deletes the book with the given id
     deleteBook: function (id) {
-        return axios.delete("https://niro-book-search-backend.herokuapp.com/api/books/" + id);
+        return axios.delete("http://localhost:3001/api/books/" + id);
     }
 
 }
